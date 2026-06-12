@@ -1,0 +1,83 @@
+# Generated output directories
+output/
+outputs/
+out/
+build/
+dist/
+artifacts/
+runs*/
+results*/
+one_gl_results*/
+*_results/
+compare_results*/
+
+# Cache and temporary directories
+.cache/
+cache/
+caches/
+*/cache/
+dataset_augmented/**/cache-*.arrow
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+tmp/
+temp/
+
+# Stale files and paper
+_duskbin/
+# paper/
+train/
+bad_request_prompts/
+library_rubric/
+setting1/
+
+# Python bytecode
+*.py[cod]
+*$py.class
+
+# Runtime logs and temporary outputs
+*.log
+*.log.*
+*.log.save
+nohup.out
+*_log.txt
+*.tmp
+*.cache
+tmp.json
+
+# Generated reports
+report.html
+report.txt
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+paper/main.pdf
+paper/main_*.pdf
+
+# Local editor and OS noise
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

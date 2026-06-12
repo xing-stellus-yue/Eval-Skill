@@ -1,0 +1,93 @@
+{
+  "builder_name": "arrow",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "arrow",
+  "dataset_size": 26252576,
+  "description": "",
+  "download_checksums": {},
+  "download_size": 26257512,
+  "features": {
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response_a": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "chosen_model": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response_b": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "rejected_model": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "old_subset": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "subset": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "intent": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "guidelines": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "rubric": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "sim_prompts": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "direct_guideline": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "explanation": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "confidence_score": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "use": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 52510088,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 26252576,
+      "num_examples": 2984,
+      "dataset_name": "arrow"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

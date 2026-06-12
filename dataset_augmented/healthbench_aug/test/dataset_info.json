@@ -1,0 +1,439 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "example_tags": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "ideal_completions_data": {
+      "ideal_completion": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "ideal_completions_group": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "ideal_completions_ref_completions": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "List"
+      }
+    },
+    "prompt": {
+      "feature": {
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "_type": "List"
+    },
+    "prompt_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "rubrics": {
+      "feature": {
+        "criterion": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "points": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "tags": {
+          "feature": {
+            "dtype": "string",
+            "_type": "Value"
+          },
+          "_type": "List"
+        }
+      },
+      "_type": "List"
+    },
+    "canary": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "subset": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "use": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response_a": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response_b": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "score_a": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "score_b": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "score_diff": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "metadata": {
+      "attempts": {
+        "feature": {
+          "attempt": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "candidate_score": {
+            "dtype": "float64",
+            "_type": "Value"
+          },
+          "pool_best_score": {
+            "dtype": "float64",
+            "_type": "Value"
+          },
+          "pool_worst_score": {
+            "dtype": "float64",
+            "_type": "Value"
+          },
+          "response_1_score": {
+            "dtype": "float64",
+            "_type": "Value"
+          },
+          "response_2_score": {
+            "dtype": "float64",
+            "_type": "Value"
+          },
+          "score_diff_abs": {
+            "dtype": "float64",
+            "_type": "Value"
+          }
+        },
+        "_type": "List"
+      },
+      "fj_model": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "generation_model": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "max_regens": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "min_diff": {
+        "dtype": "float64",
+        "_type": "Value"
+      },
+      "response_a": {
+        "achieved_points": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "rubric_judgments": {
+          "feature": {
+            "criteria_met": {
+              "dtype": "bool",
+              "_type": "Value"
+            },
+            "explanation": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "raw_output": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "rubric": {
+              "criterion": {
+                "dtype": "string",
+                "_type": "Value"
+              },
+              "points": {
+                "dtype": "int64",
+                "_type": "Value"
+              },
+              "tags": {
+                "feature": {
+                  "dtype": "string",
+                  "_type": "Value"
+                },
+                "_type": "List"
+              }
+            }
+          },
+          "_type": "List"
+        },
+        "score": {
+          "dtype": "float64",
+          "_type": "Value"
+        },
+        "total_positive_points": {
+          "dtype": "int64",
+          "_type": "Value"
+        }
+      },
+      "response_b": {
+        "achieved_points": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "rubric_judgments": {
+          "feature": {
+            "criteria_met": {
+              "dtype": "bool",
+              "_type": "Value"
+            },
+            "explanation": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "raw_output": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "rubric": {
+              "criterion": {
+                "dtype": "string",
+                "_type": "Value"
+              },
+              "points": {
+                "dtype": "int64",
+                "_type": "Value"
+              },
+              "tags": {
+                "feature": {
+                  "dtype": "string",
+                  "_type": "Value"
+                },
+                "_type": "List"
+              }
+            }
+          },
+          "_type": "List"
+        },
+        "score": {
+          "dtype": "float64",
+          "_type": "Value"
+        },
+        "total_positive_points": {
+          "dtype": "int64",
+          "_type": "Value"
+        }
+      }
+    },
+    "orig_score": {
+      "response_a": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "response_b": {
+        "dtype": "int64",
+        "_type": "Value"
+      }
+    },
+    "response_a_valid": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response_b_valid": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "score_a_valid": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "score_b_valid": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "score_diff_valid": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "orig_score_valid": {
+      "response_a": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "response_b": {
+        "dtype": "int64",
+        "_type": "Value"
+      }
+    },
+    "metadata_valid": {
+      "attempts": {
+        "feature": {
+          "attempt": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "candidate_score": {
+            "dtype": "float64",
+            "_type": "Value"
+          },
+          "pool_best_score": {
+            "dtype": "float64",
+            "_type": "Value"
+          },
+          "pool_worst_score": {
+            "dtype": "float64",
+            "_type": "Value"
+          },
+          "score_diff_abs": {
+            "dtype": "float64",
+            "_type": "Value"
+          }
+        },
+        "_type": "List"
+      },
+      "fj_model": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "generation_model": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "max_regens": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "min_diff": {
+        "dtype": "float64",
+        "_type": "Value"
+      },
+      "response_a": {
+        "achieved_points": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "rubric_judgments": {
+          "feature": {
+            "criteria_met": {
+              "dtype": "bool",
+              "_type": "Value"
+            },
+            "explanation": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "raw_output": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "rubric": {
+              "criterion": {
+                "dtype": "string",
+                "_type": "Value"
+              },
+              "points": {
+                "dtype": "int64",
+                "_type": "Value"
+              },
+              "tags": {
+                "feature": {
+                  "dtype": "string",
+                  "_type": "Value"
+                },
+                "_type": "List"
+              }
+            }
+          },
+          "_type": "List"
+        },
+        "score": {
+          "dtype": "float64",
+          "_type": "Value"
+        },
+        "total_positive_points": {
+          "dtype": "int64",
+          "_type": "Value"
+        }
+      },
+      "response_b": {
+        "achieved_points": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "rubric_judgments": {
+          "feature": {
+            "criteria_met": {
+              "dtype": "bool",
+              "_type": "Value"
+            },
+            "explanation": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "raw_output": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "rubric": {
+              "criterion": {
+                "dtype": "string",
+                "_type": "Value"
+              },
+              "points": {
+                "dtype": "int64",
+                "_type": "Value"
+              },
+              "tags": {
+                "feature": {
+                  "dtype": "string",
+                  "_type": "Value"
+                },
+                "_type": "List"
+              }
+            }
+          },
+          "_type": "List"
+        },
+        "score": {
+          "dtype": "float64",
+          "_type": "Value"
+        },
+        "total_positive_points": {
+          "dtype": "int64",
+          "_type": "Value"
+        }
+      }
+    },
+    "explanation": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "confidence_score": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

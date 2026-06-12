@@ -1,0 +1,4 @@
+# Python 3.10+ is required by the source package.
+datasets>=2.18.0
+openai>=1.30.0
+tqdm>=4.66.0

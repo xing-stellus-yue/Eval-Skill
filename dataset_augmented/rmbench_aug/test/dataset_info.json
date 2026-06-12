@@ -1,0 +1,48 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "old_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "subset": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response_a": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response_b": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "difficulty": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "use": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "explanation": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "confidence_score": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

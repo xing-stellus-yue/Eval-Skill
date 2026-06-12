@@ -1,0 +1,162 @@
+{
+  "builder_name": "arrow",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "arrow",
+  "dataset_size": 27854126,
+  "description": "",
+  "download_checksums": {},
+  "download_size": 27861544,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response_a": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "response_b": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "num_correct": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "num_incorrect": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "total_completions": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "models": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "subset": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "additional_metadata": {
+      "category": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "correct": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "index": {
+        "dtype": "float64",
+        "_type": "Value"
+      },
+      "instruction_id_list": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "List"
+      },
+      "label": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "method": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "models": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "List"
+      },
+      "prompt_norm": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "subcategory": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "valid": {
+        "dtype": "float64",
+        "_type": "Value"
+      }
+    },
+    "old_intent": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "sim_prompts": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "direct_guideline": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "intent": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "guidelines": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "rubric": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "old_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "explanation": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "confidence_score": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "use": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 55715670,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 27854126,
+      "num_examples": 1763,
+      "dataset_name": "arrow"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
