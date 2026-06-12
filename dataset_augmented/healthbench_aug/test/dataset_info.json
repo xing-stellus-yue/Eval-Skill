@@ -9,23 +9,6 @@
       },
       "_type": "List"
     },
-    "ideal_completions_data": {
-      "ideal_completion": {
-        "dtype": "string",
-        "_type": "Value"
-      },
-      "ideal_completions_group": {
-        "dtype": "string",
-        "_type": "Value"
-      },
-      "ideal_completions_ref_completions": {
-        "feature": {
-          "dtype": "string",
-          "_type": "Value"
-        },
-        "_type": "List"
-      }
-    },
     "prompt": {
       "feature": {
         "content": {
@@ -62,10 +45,6 @@
         }
       },
       "_type": "List"
-    },
-    "canary": {
-      "dtype": "string",
-      "_type": "Value"
     },
     "id": {
       "dtype": "int64",
