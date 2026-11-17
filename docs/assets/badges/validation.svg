@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="176" height="28" role="img" aria-label="Validation: Report">
+  <title>Validation: Report</title>
+  <rect width="176" height="28" rx="3" fill="#0f766e"/>
+  <path d="M3 0H100V28H3Q0 28 0 25V3Q0 0 3 0Z" fill="#263244"/>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10" font-weight="600" letter-spacing="0.5">
+    <text x="50" y="18">VALIDATION</text>
+    <text x="138" y="18">REPORT</text>
+  </g>
+</svg>

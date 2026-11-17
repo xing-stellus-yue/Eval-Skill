@@ -25,13 +25,11 @@ def split_think_output(content: str, kind: str) -> tuple[str, str]:
         return visible.strip(), reasoning.replace("<think>", "", 1).strip()
     if close_count > 1:
         tqdm.write(
-            f"{kind}:multiple",
             f"[think parser] {kind} contains {close_count} '</think>' tags; using the last tag as the split point.",
         )
         reasoning, visible = content.rsplit("</think>", 1)
         return visible.strip(), reasoning.replace("<think>", "", 1).strip()
     tqdm.write(
-        f"{kind}:missing",
         f"[think parser] {kind} thinking is enabled, but no '</think>' tag was returned; using the full response as visible content.",
     )
     return content.strip(), ""

@@ -76,6 +76,9 @@ paper/main.pdf
 paper/main_*.pdf
 
 # Local editor and OS noise
+.venv/
+eval_skill.local.env
+dataset_augmented_local/
 *~
 *.swp
 *.swo

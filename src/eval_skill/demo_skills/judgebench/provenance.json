@@ -1,0 +1,24 @@
+{
+  "source": "AAAI 2027 handoff: source_only_judgebench/protocol.json",
+  "skills": [
+    {
+      "domain": "mixed",
+      "file": "mixed.md",
+      "sha256": "247956e2d159bd336846e3258d62a66e045e977b50d347e57f5a0821c133072c",
+      "judge_model": "Qwen3-8B",
+      "skill_type": "transfer",
+      "source_benchmark": "RewardBench",
+      "target_benchmark": "JudgeBench",
+      "source_artifact": "results/rebuttal/source_only_judgebench/source_only_guidance.md",
+      "protocol": "results/rebuttal/source_only_judgebench/protocol.json",
+      "target_calibration_examples": 0,
+      "target_access_for_synthesis": false,
+      "source_skills": {
+        "Qwen3-8B__rb_aug_100__chat-hard.md": "c1be3cb5ed51d06cb59f7834b83fd44fe5bb3102358c64c4f4f42716115e2127",
+        "Qwen3-8B__rb_aug_100__chat.md": "47196cac94aa67b18df402e9c550f1a5d728ff4ca98b58be92c956d802fa59b9",
+        "Qwen3-8B__rb_aug_100__dangerous.md": "da1eca22b32784d8299d878726402a865d048f5ad5b157bd4c8853ec2316e76c",
+        "Qwen3-8B__rb_aug_100__reasoning.md": "c43037e0da4a957a0fd1861feeb3b9f97bc99a991f6fe4bac866bc3ae8ba1e08"
+      }
+    }
+  ]
+}

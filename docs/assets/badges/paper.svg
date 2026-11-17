@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124" height="28" role="img" aria-label="Paper: arXiv">
+  <title>Paper: arXiv</title>
+  <rect width="124" height="28" rx="3" fill="#b31b1b"/>
+  <path d="M3 0H62V28H3Q0 28 0 25V3Q0 0 3 0Z" fill="#263244"/>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10" font-weight="600" letter-spacing="0.5">
+    <text x="31" y="18">PAPER</text>
+    <text x="93" y="18">ARXIV</text>
+  </g>
+</svg>

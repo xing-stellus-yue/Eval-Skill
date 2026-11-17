@@ -1,6 +1,6 @@
-# Augmented Benchmark Copies
+# Prepared benchmark datasets
 
-This directory contains the already augmented benchmark datasets:
+This directory contains benchmark datasets with explanations for skill generation:
 
 - `rewardbench_aug`
 - `rewardbench2_aug`
@@ -13,14 +13,12 @@ They are stored in Hugging Face `save_to_disk` format and can be loaded with:
 ```python
 from datasets import load_from_disk
 
-dataset = load_from_disk("dataset_augmented/rewardbench_aug")["test"]
+dataset = load_from_disk("dataset_augmented/rewardbench2_aug")["test"]
 ```
 
-`healthbench_aug` uses the seven HealthBench theme domains directly in
-`subset`; its `use` column is the former fine-grained split. There is no
-separate legacy fine-mode column in the public copy.
+The dataset's `test` entry contains all rows. Use the `use` column to select
+`train` rows for skill generation and selection, or `test` rows for evaluation.
+The `subset` column identifies the domain; HealthBench uses seven themes.
 
-The shipped explanations follow the splits used during the original
-experiments. If you regenerate benchmark splits with a different seed or policy,
-run `python -m eval_skill augment` again so the new training cases receive
-matching explanations.
+If you change the training split, regenerate explanations for the new training
+examples with `python -m src.eval_skill augment --benchmark <benchmark>`.

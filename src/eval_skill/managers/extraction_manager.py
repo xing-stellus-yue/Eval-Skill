@@ -24,6 +24,30 @@ from ..prompts import skill_msg as msg_skill_prompts
 from ..util import LLMResponse
 
 
+def parse_skill_branches(content: str, k_branches: int) -> list[dict]:
+    """Find a complete skill array without treating prose brackets as JSON."""
+    if k_branches < 1:
+        raise ValueError("k_branches must be at least 1")
+    decoder = json.JSONDecoder()
+    for match in re.finditer(r"\[", content):
+        try:
+            value, _ = decoder.raw_decode(content, match.start())
+        except json.JSONDecodeError:
+            continue
+        if (
+            isinstance(value, list)
+            and len(value) >= k_branches
+            and all(
+                isinstance(item, dict)
+                and isinstance(item.get("skill"), str)
+                and item["skill"].strip()
+                for item in value
+            )
+        ):
+            return value[:k_branches]
+    raise ValueError(f"Expected a JSON array with at least {k_branches} nonempty skill objects")
+
+
 class ExtractionManager:
     def __init__(self, dataset=None, dataset_name="", return_think: bool = False):
         print(
@@ -456,10 +480,7 @@ class ExtractionManager:
             skill_template=self.get_skill_template_by_step1_flag(step1_flag),
         )
         resp = self.call_extraction_llm(prompt=final_prompt)
-        match = re.search(r"\[.*\]", resp.content, re.DOTALL)
-        if not match:
-            raise ValueError(f"Failed to parse clustered skills: {resp.content}")
-        clustered_skills = json.loads(match.group(0))[:k_branches]
+        clustered_skills = parse_skill_branches(resp.content, k_branches)
         with cache_path.open("w", encoding="utf-8") as f:
             json.dump(
                 {

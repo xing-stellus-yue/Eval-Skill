@@ -1,0 +1,60 @@
+{
+  "source": "AAAI 2027 handoff: selected_skill_index.json and MANIFEST.tsv",
+  "skills": [
+    {
+      "domain": "Factuality",
+      "file": "Factuality.md",
+      "sha256": "8f2a3e8a92a2dd519e9c4eb4fcda8f774e55443053777791af0c21e31d5aeebe",
+      "judge_model": "Qwen3-8B",
+      "historical_benchmark": "rb2all_aug_100",
+      "selected_method": "full",
+      "source_artifact": "papers/rebuttal/aaai2027/exp_for_rebuttal/artifacts/selected_skills/Qwen3-8B__rb2all_aug_100__Factuality.md",
+      "historical_skill_source": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb2all_aug_100/Factuality/stage4_best_branch_g0_b0/final_branch_results.json",
+      "selection_file": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb2all_aug_100/Factuality/best_of_2_acc.json"
+    },
+    {
+      "domain": "Focus",
+      "file": "Focus.md",
+      "sha256": "de0cea1eb7345cd368efc39e35b04f46dfea8b99f1c6f5af97ae747f9dd0570a",
+      "judge_model": "Qwen3-8B",
+      "historical_benchmark": "rb2all_aug_100",
+      "selected_method": "full",
+      "source_artifact": "papers/rebuttal/aaai2027/exp_for_rebuttal/artifacts/selected_skills/Qwen3-8B__rb2all_aug_100__Focus.md",
+      "historical_skill_source": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb2all_aug_100/Focus/stage4_best_branch_g4_b4/final_branch_results.json",
+      "selection_file": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb2all_aug_100/Focus/best_of_2_acc.json"
+    },
+    {
+      "domain": "Math",
+      "file": "Math.md",
+      "sha256": "2770ec81eebb0a651397374c433c354aa449c3ecec5268388c9e400a5cdd1fbd",
+      "judge_model": "Qwen3-8B",
+      "historical_benchmark": "rb2all_aug_100",
+      "selected_method": "full",
+      "source_artifact": "papers/rebuttal/aaai2027/exp_for_rebuttal/artifacts/selected_skills/Qwen3-8B__rb2all_aug_100__Math.md",
+      "historical_skill_source": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb2all_aug_100/Math/stage4_best_branch_g2_b0/final_branch_results.json",
+      "selection_file": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb2all_aug_100/Math/best_of_2_acc.json"
+    },
+    {
+      "domain": "Precise IF",
+      "file": "Precise_IF.md",
+      "sha256": "57697cf7dd7ce75cf8527f19510f13a7ddda54aa1038c91a2d89ce6f12d8ce1e",
+      "judge_model": "Qwen3-8B",
+      "historical_benchmark": "rb2all_aug_100",
+      "selected_method": "workflow_only",
+      "source_artifact": "papers/rebuttal/aaai2027/exp_for_rebuttal/artifacts/selected_skills/Qwen3-8B__rb2all_aug_100__Precise_IF.md",
+      "historical_skill_source": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb2all_aug_100/Precise IF/stage1a/half_candidates.json",
+      "selection_file": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb2all_aug_100/Precise IF/best_of_2_acc.json"
+    },
+    {
+      "domain": "Safety",
+      "file": "Safety.md",
+      "sha256": "e7005828c39a7dfca5b170cac5f76c2de9103ec758f3fd393ece14bb8bc2473b",
+      "judge_model": "Qwen3-8B",
+      "historical_benchmark": "rb2all_aug_100",
+      "selected_method": "full",
+      "source_artifact": "papers/rebuttal/aaai2027/exp_for_rebuttal/artifacts/selected_skills/Qwen3-8B__rb2all_aug_100__Safety.md",
+      "historical_skill_source": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb2all_aug_100/Safety/stage4_best_branch_gfuse_b4/final_branch_results.json",
+      "selection_file": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb2all_aug_100/Safety/best_of_2_acc.json"
+    }
+  ]
+}

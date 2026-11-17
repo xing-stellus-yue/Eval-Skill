@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="264" height="28" role="img" aria-label="Skill examples: 14 skills">
+  <title>Skill examples: 14 skills</title>
+  <rect width="264" height="28" rx="3" fill="#6366f1"/>
+  <path d="M3 0H132V28H3Q0 28 0 25V3Q0 0 3 0Z" fill="#263244"/>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10" font-weight="600" letter-spacing="0.5">
+    <text x="66" y="18">SKILL EXAMPLES</text>
+    <text x="198" y="18">14 SKILLS</text>
+  </g>
+</svg>

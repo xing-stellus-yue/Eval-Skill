@@ -1,0 +1,49 @@
+{
+  "source": "AAAI 2027 handoff: selected_skill_index.json and MANIFEST.tsv",
+  "skills": [
+    {
+      "domain": "chat",
+      "file": "chat.md",
+      "sha256": "47196cac94aa67b18df402e9c550f1a5d728ff4ca98b58be92c956d802fa59b9",
+      "judge_model": "Qwen3-8B",
+      "historical_benchmark": "rb_aug_100",
+      "selected_method": "full",
+      "source_artifact": "papers/rebuttal/aaai2027/exp_for_rebuttal/artifacts/selected_skills/Qwen3-8B__rb_aug_100__chat.md",
+      "historical_skill_source": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb_aug_100/chat/stage4_best_branch_g2_b0/final_branch_results.json",
+      "selection_file": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb_aug_100/chat/best_of_2_acc.json"
+    },
+    {
+      "domain": "chat-hard",
+      "file": "chat-hard.md",
+      "sha256": "c1be3cb5ed51d06cb59f7834b83fd44fe5bb3102358c64c4f4f42716115e2127",
+      "judge_model": "Qwen3-8B",
+      "historical_benchmark": "rb_aug_100",
+      "selected_method": "full",
+      "source_artifact": "papers/rebuttal/aaai2027/exp_for_rebuttal/artifacts/selected_skills/Qwen3-8B__rb_aug_100__chat-hard.md",
+      "historical_skill_source": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb_aug_100/chat-hard/stage4_best_branch_g4_b0/final_branch_results.json",
+      "selection_file": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb_aug_100/chat-hard/best_of_2_acc.json"
+    },
+    {
+      "domain": "dangerous",
+      "file": "dangerous.md",
+      "sha256": "da1eca22b32784d8299d878726402a865d048f5ad5b157bd4c8853ec2316e76c",
+      "judge_model": "Qwen3-8B",
+      "historical_benchmark": "rb_aug_100",
+      "selected_method": "full",
+      "source_artifact": "papers/rebuttal/aaai2027/exp_for_rebuttal/artifacts/selected_skills/Qwen3-8B__rb_aug_100__dangerous.md",
+      "historical_skill_source": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb_aug_100/dangerous/stage4_best_branch_gfuse_b4/final_branch_results.json",
+      "selection_file": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb_aug_100/dangerous/best_of_2_acc.json"
+    },
+    {
+      "domain": "reasoning",
+      "file": "reasoning.md",
+      "sha256": "c43037e0da4a957a0fd1861feeb3b9f97bc99a991f6fe4bac866bc3ae8ba1e08",
+      "judge_model": "Qwen3-8B",
+      "historical_benchmark": "rb_aug_100",
+      "selected_method": "full",
+      "source_artifact": "papers/rebuttal/aaai2027/exp_for_rebuttal/artifacts/selected_skills/Qwen3-8B__rb_aug_100__reasoning.md",
+      "historical_skill_source": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb_aug_100/reasoning/stage4_best_branch_g2_b4/final_branch_results.json",
+      "selection_file": "historical_experiments/results/skills/one_gl_results/test_run4_norub_v41_supervised/rb_aug_100/reasoning/best_of_2_acc.json"
+    }
+  ]
+}

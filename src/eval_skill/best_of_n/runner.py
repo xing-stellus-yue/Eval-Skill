@@ -133,15 +133,14 @@ class KnockoutSelector:
         return pairs, byes
 
     def evaluate_pair(self, question: str, a: Candidate, b: Candidate) -> str:
-        options = [a.text, b.text]
-        return self.evaluate_candidates(question,options)
+        return self.evaluate_candidates(question, [a, b])
 
 
     def evaluate_candidates(self, question: str, candidates: list[Candidate]) -> str:
         options = [candidate.text for candidate in candidates]
         if self.mode == "skill":
             return self.eval_manager.evaluate_response(
-                question, options,self.mode, self.skill, use_supervision=False
+                question, options, "eval_skill", self.skill, use_supervision=False
             )
         if self.mode == "vanilla":
             return self.eval_manager.evaluate_response(
@@ -449,7 +448,7 @@ def main(argv: list[str] | None = None) -> int:
 
     eval_manager = get_eval_manager(dataset_name=args.benchmark)
     extraction_manager = get_extraction_manager(dataset=dataset, dataset_name=args.benchmark,return_think=True)
-    generation_manager = get_generation_manager(dataset_name=args.benchmark)
+    generation_manager = get_generation_manager()
 
     skill_meta_by_subset = {}
     for subset_name in subset_names:
@@ -743,7 +742,7 @@ def main(argv: list[str] | None = None) -> int:
     same_choice = sum(
         1
         for r in ok_results
-        if r["skill_runner"]["best_idx"] == r["vanillala_runner"]["best_idx"]
+        if r["skill_runner"]["best_idx"] == r["vanilla_runner"]["best_idx"]
     )
 
     summary = {
